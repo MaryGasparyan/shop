@@ -167,93 +167,51 @@
         </ol>
       </nav>
 
-      <table style="font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;">
-  <tr>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Product</th>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Name</th>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Price</th>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Quantity</th>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Total</th>
-    <th style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Clear All</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }"><img src="https://images.jtv.com/jewelry/JTV-CWB242-1-medium.jpg" class="img-fluid" width="100"></td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Cubic Zirconia</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">$59.99</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">2</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">$119.98</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button></td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }"><img src="https://images.jtv.com/jewelry/JTV-DOB148-1-medium.jpg" class="img-fluid" width="100"></td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">Silver Ring</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">$29.99</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">2</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }">$29.99</td>
-    <td style="border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button></td>
-  </tr>
- 
+<div class="row">
+<div class="col-12">     
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total</th>
+      <th scope="col">Clear All</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://images.jtv.com/jewelry/JTV-CWB242-1-medium.jpg" class="img-fluid" width="75"></td>
+      <td>Cubic Zirconia</td>
+      <td>$59.99</td>
+      <td>2</td>
+      <td>$119.98</td>
+      <td><div class="d-flex justify-content-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button> </div></td>
+    </tr>
+    <tr>
+      <td><img src="https://images.jtv.com/jewelry/JTV-DOB148-1-medium.jpg" class="img-fluid" width="75"></td>
+      <td>Silver Ring</td>
+      <td>$29.99</td>
+      <td>1</td>
+      <td>$29.99</td>
+      <td><div class="d-flex justify-content-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button></div></td>
+    </tr>
+  </tbody>
 </table>
+</div>
+</div>
+
+
+
+
+
+
+<div class="container">
     </div>
     <div class="row mt-3">
       <div class="d-none d-md-block col-md-6">
@@ -265,6 +223,7 @@
       <div class="col-md-3">
         <a class="btn btn-secondary" href="address.html" role="button">Proceed To Checkout</a>
       </div>
+    </div>
     </div>
 
     <div class="mt-3">
@@ -377,6 +336,72 @@
     </div>
 
   </div>
+
+  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-secondary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1">Surname</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword1">Comfirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"><br>
+                <div class="custom-control custom-radio custom-control-inline">
+
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">Female</label>
+                </div><br><br>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
